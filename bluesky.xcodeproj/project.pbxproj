@@ -12,6 +12,9 @@
 		D49B277121260A79002A87CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D49B276F21260A79002A87CC /* Main.storyboard */; };
 		D49B277321260A79002A87CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D49B277221260A79002A87CC /* Assets.xcassets */; };
 		D49B277621260A79002A87CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D49B277421260A79002A87CC /* LaunchScreen.storyboard */; };
+		D49E7A5121C7864C00918CAC /* CertRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49E7A5021C7864C00918CAC /* CertRequestViewController.swift */; };
+		D49E7A5321C7868D00918CAC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49E7A5221C7868D00918CAC /* SettingsViewController.swift */; };
+		D49E7A5521C786D300918CAC /* AutoIDRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49E7A5421C786D300918CAC /* AutoIDRequestViewController.swift */; };
 		ED8404F02126892500E6214D /* CallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8404EF2126892500E6214D /* CallViewController.swift */; };
 		ED8404F22126897800E6214D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8404F12126897800E6214D /* Constants.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +27,9 @@
 		D49B277221260A79002A87CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D49B277521260A79002A87CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D49B277721260A79002A87CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D49E7A5021C7864C00918CAC /* CertRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertRequestViewController.swift; sourceTree = "<group>"; };
+		D49E7A5221C7868D00918CAC /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		D49E7A5421C786D300918CAC /* AutoIDRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoIDRequestViewController.swift; sourceTree = "<group>"; };
 		ED8404EF2126892500E6214D /* CallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallViewController.swift; sourceTree = "<group>"; };
 		ED8404F12126897800E6214D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,8 +78,11 @@
 		ED8404EE2126779000E6214D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				D49E7A5221C7868D00918CAC /* SettingsViewController.swift */,
+				D49E7A5021C7864C00918CAC /* CertRequestViewController.swift */,
 				D49B276D21260A79002A87CC /* MainMenuViewController.swift */,
 				ED8404EF2126892500E6214D /* CallViewController.swift */,
+				D49E7A5421C786D300918CAC /* AutoIDRequestViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -150,9 +159,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED8404F02126892500E6214D /* CallViewController.swift in Sources */,
+				D49E7A5521C786D300918CAC /* AutoIDRequestViewController.swift in Sources */,
 				D49B276E21260A79002A87CC /* MainMenuViewController.swift in Sources */,
 				D49B276C21260A79002A87CC /* AppDelegate.swift in Sources */,
 				ED8404F22126897800E6214D /* Constants.swift in Sources */,
+				D49E7A5121C7864C00918CAC /* CertRequestViewController.swift in Sources */,
+				D49E7A5321C7868D00918CAC /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,7 +311,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WHMWBFL62P;
 				INFOPLIST_FILE = bluesky/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,7 +330,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WHMWBFL62P;
 				INFOPLIST_FILE = bluesky/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
