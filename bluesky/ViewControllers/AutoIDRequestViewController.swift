@@ -9,10 +9,17 @@
 import UIKit
 
 class AutoIDRequestViewController: UIViewController {
-
+    
+    @IBOutlet weak var yearTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
+    
+    @IBAction func onButtonSubmit(_ sender: Any) {
+        let message = yearTextField.text!
+    }
+    
+    
 
 }
