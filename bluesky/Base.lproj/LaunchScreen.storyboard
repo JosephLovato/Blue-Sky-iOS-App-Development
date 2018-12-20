@@ -18,32 +18,8 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M0h-74-QEF">
-                                <rect key="frame" x="16" y="44" width="343" height="734"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blue-sky-logo" translatesAutoresizingMaskIntoConstraints="NO" id="Cig-Yw-Qu3">
-                                        <rect key="frame" x="51" y="303" width="240" height="128"/>
-                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </imageView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="Cig-Yw-Qu3" secondAttribute="trailing" constant="52" id="ZlP-r6-PTn"/>
-                                    <constraint firstItem="Cig-Yw-Qu3" firstAttribute="leading" secondItem="M0h-74-QEF" secondAttribute="leading" constant="51" id="cRx-0z-3wU"/>
-                                    <constraint firstAttribute="bottom" secondItem="Cig-Yw-Qu3" secondAttribute="bottom" constant="303" id="kSR-PO-hjk"/>
-                                    <constraint firstItem="Cig-Yw-Qu3" firstAttribute="top" secondItem="M0h-74-QEF" secondAttribute="top" constant="303" id="wjg-ep-jKg"/>
-                                </constraints>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" name="PrimaryDark"/>
                         <color key="tintColor" name="PrimaryDark"/>
-                        <constraints>
-                            <constraint firstItem="M0h-74-QEF" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" id="A9h-lw-ovG"/>
-                            <constraint firstItem="M0h-74-QEF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="EYC-7A-TGf"/>
-                            <constraint firstItem="M0h-74-QEF" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="RS3-5p-sGg"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="M0h-74-QEF" secondAttribute="trailing" constant="16" id="UkC-Gr-nxT"/>
-                            <constraint firstItem="M0h-74-QEF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="w5a-24-qYu"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -53,7 +29,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="blue-sky-logo" width="310" height="140"/>
         <namedColor name="PrimaryDark">
             <color red="0.18823529411764706" green="0.24705882352941178" blue="0.62352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

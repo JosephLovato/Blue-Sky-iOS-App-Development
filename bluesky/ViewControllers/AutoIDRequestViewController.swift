@@ -19,6 +19,8 @@ class AutoIDRequestViewController: UIViewController {
     @IBOutlet weak var vimNumberTextField: UITextField!
     @IBOutlet weak var coverageSegmentedButton: UISegmentedControl!
     @IBOutlet weak var addDeleteSegmentedButton: UISegmentedControl!
+    @IBOutlet weak var autoIDCardLabel: UILabel!
+    @IBOutlet weak var autoIDCard: UISwitch!
     @IBOutlet weak var submitButton: UIButton!
     
     override func viewDidLoad() {
@@ -59,8 +61,16 @@ class AutoIDRequestViewController: UIViewController {
         }
         
         scroll.scrollIndicatorInsets = scroll.contentInset
-        
     }
-   
-
+    
+    @IBAction func addIDCardToggle(_ sender: Any) {
+        if addDeleteSegmentedButton.selectedSegmentIndex == 0 {
+            autoIDCard.isHidden = false
+            autoIDCardLabel.isHidden = false
+        } else if addDeleteSegmentedButton.selectedSegmentIndex == 1 {
+                autoIDCard.isHidden = true
+                autoIDCardLabel.isHidden = true
+        }
+    }
+    
 }

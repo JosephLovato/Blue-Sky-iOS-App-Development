@@ -18,4 +18,5 @@ class Constants {
     static let CallJoelURL: URL? = URL(string: "tel://\(Constants.JoelPhoneNumber)")
     static let CallBillURL: URL? = URL(string: "tel://\(Constants.BillPhoneNumber)")
     
+    
 }
