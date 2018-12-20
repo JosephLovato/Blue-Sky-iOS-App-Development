@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class AutoIDRequestViewController: UIViewController {
     
     
@@ -71,6 +72,10 @@ class AutoIDRequestViewController: UIViewController {
                 autoIDCard.isHidden = true
                 autoIDCardLabel.isHidden = true
         }
+    }
+    
+    func sendEmail(bodyText: String) {
+        
     }
     
 }

@@ -22,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		D4618FE521CB6CCC003E24E6 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		D4618FE821CC1617003E24E6 /* Swift-SMTP-master */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Swift-SMTP-master"; path = "../../../../Downloads/Swift-SMTP-master"; sourceTree = "<group>"; };
 		D49B276821260A79002A87CC /* bluesky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bluesky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D49B276B21260A79002A87CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D49B276D21260A79002A87CC /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
@@ -47,11 +48,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D4618FE721CC1616003E24E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4618FE821CC1617003E24E6 /* Swift-SMTP-master */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D49B275F21260A79002A87CC = {
 			isa = PBXGroup;
 			children = (
 				D49B276A21260A79002A87CC /* bluesky */,
 				D49B276921260A79002A87CC /* Products */,
+				D4618FE721CC1616003E24E6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};

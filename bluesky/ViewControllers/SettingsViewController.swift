@@ -19,34 +19,34 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        do {
-//            let dataArray = try Array(contentsOf: dataURL)!
-//            let anotherArray = dataArray as Array
-//            //let dataArray = data.split(separator: ",")
-//            print(dataArray)
-//            companyNameTextField.text = anotherArray[0]
-//            firstLastNameTextField.text = String(dataArray[1])
-//            companyEmailTextField.text = String(dataArray[2])
-//            agencyEmailTextField.text = String(dataArray[3])
-//        } catch {
-//            print("error")
-//        }
+        do {
+            let jsonDecoder = JSONDecoder()
+            let savedJSONData = try Data(contentsOf: dataURL)
+            let dataNew = try jsonDecoder.decode(userData.self, from: savedJSONData)
+            companyNameTextField.text = dataNew.companyName
+            firstLastNameTextField.text = dataNew.firstLastName
+            companyEmailTextField.text = dataNew.companyEmail
+            agencyEmailTextField.text = dataNew.agencyEmail
+        } catch {
+            print("error")
+        }
         
 
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-//        let companyName = companyNameTextField.text
-//        let firstLastName = firstLastNameTextField.text
-//        let companyEmail = companyEmailTextField.text
-//        let agencyEmail = agencyEmailTextField.text
-//        let dataArray = [companyName, firstLastName, companyEmail, agencyEmail]
-//        //let dataCSV = "\(companyName ?? ""),\(firstLastName ?? ""),\(companyEmail ?? ""),\(agencyEmail ?? "")"
-//        do {
-//            //try dataCSV.write(to: dataURL, atomically: true, encoding: .utf8)
-//            try (dataArray as NSArray).write(to: dataURL, atomically: true)
-//        } catch {
-//            print("error2")
-//        }
+        let companyName = companyNameTextField.text
+        let firstLastName = firstLastNameTextField.text
+        let companyEmail = companyEmailTextField.text
+        let agencyEmail = agencyEmailTextField.text
+        let test = userData(companyName: companyName ?? "", firstLastName: firstLastName ?? "", companyEmail: companyEmail ?? "", agencyEmail: agencyEmail ?? "")
+        do {
+            let jsonEncoder = JSONEncoder()
+            jsonEncoder.outputFormatting = .prettyPrinted
+            let jsonData = try jsonEncoder.encode(test)
+            try jsonData.write(to: dataURL)
+        } catch {
+            print("error2")
+        }
     }
 }

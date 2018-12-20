@@ -14,24 +14,22 @@ public extension FileManager {
     }
 }
 
-public struct userData: Decodable {
-    enum DecodingError: Error {
-        case missingFile
-    }
-    
+public struct userData: Codable, Equatable {
     let companyName: String
     let firstLastName: String
     let companyEmail: String
     let agencyEmail: String
     
-    init(fileName: String) throws {
-        guard let url = Bundle.main.url(forResource: fileName, withExtension: "json") else {
-            throw DecodingError.missingFile
-        }
-        
-        let decoder = JSONDecoder()
-        let data = try Data(contentsOf: url)
-        self = try decoder.decode(userData.self, from: data)
+    public init(
+        companyName: String,
+        firstLastName: String,
+        companyEmail: String,
+        agencyEmail: String
+        ) {
+        self.companyName = companyName
+        self.firstLastName = firstLastName
+        self.companyEmail = companyEmail
+        self.agencyEmail = agencyEmail
     }
 }
 
